@@ -1,0 +1,81 @@
+﻿<Commands>
+  <RenameHeader>
+    <OldName>
+      <Item>FIO</Item>
+      <Item>ФИО</Item>
+    </OldName>
+    <NewName>Column2</NewName>
+  </RenameHeader>
+  <RemoveTopEmptyRows />
+  <RemoveRow>
+    <RowIndex>5</RowIndex>
+  </RemoveRow>
+  <RemoveRow>
+    <RowIndex>3</RowIndex>
+  </RemoveRow>
+  <AddColumn>
+    <ColumnHeaderName>Новая колонка1</ColumnHeaderName>
+    <Value>Новое значение</Value>
+  </AddColumn>
+  <AddColumn dataType="datetime" stepPattern="-1y2M3d4h5m6s">
+    <ColumnHeaderName>Дата</ColumnHeaderName>
+    <Value>2010.05.06</Value>
+  </AddColumn>
+  <AddColumn dataType="int" step="2">
+    <ColumnHeaderName>Int</ColumnHeaderName>
+    <Value>23</Value>
+  </AddColumn>
+  <AddColumn dataType="double" step="2.3">
+    <ColumnHeaderName>Double</ColumnHeaderName>
+    <Value>2.3</Value>
+  </AddColumn>
+  <RemoveColumn>
+    <Column>B</Column>
+  </RemoveColumn>
+  <ReplaceRegex>
+    <Pattern>10\.</Pattern>
+    <Replacement>2222222</Replacement>
+  </ReplaceRegex>
+  <Replace>
+    <Column>E</Column>
+    <What>22</What>
+    <With>1</With>
+  </Replace>
+  <SplitByLength>
+    <Column>I</Column>
+    <Length>200</Length>
+    <Column1Header>Part 1</Column1Header>
+    <Column2Header>Part 2</Column2Header>
+  </SplitByLength>
+  <AddHeaders>
+    <ColumnHeaders>
+      <Name>Header 1</Name>
+      <Name>Header 2</Name>
+      <Name>Header 3</Name>
+    </ColumnHeaders>
+  </AddHeaders>
+  <Copy>
+    <Column>E</Column>
+    <ColumnHeader>Copy</ColumnHeader>
+  </Copy>
+  <Substring>
+    <StartIndex>-2</StartIndex>
+    <Length>-2</Length>
+    <Column>E</Column>
+    <DestinationColumn></DestinationColumn>
+    <ColumnHeader>Substring</ColumnHeader>
+  </Substring>
+  <Concatenate side="left">
+    <Column>H</Column>
+    <What>Z</What>
+  </Concatenate>
+  <MergeColumns>
+    <Source>
+      <Column>A</Column>
+      <Column>B</Column>
+      <Column>D</Column>
+    </Source>
+    <Delimiter>,</Delimiter>
+    <ColumnHeader>Merged</ColumnHeader>
+  </MergeColumns>
+</Commands>
