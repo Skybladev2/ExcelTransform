@@ -1,0 +1,1 @@
+ExcelTransform processes Excel (.xls) files by launching Excel as an automation server and sends there commands stored in XML-file(s). Test commands and test Excel file can be found at ExcelTransform project. Commands are self-descriptive. There is a known bug with cell's date or text format, but I don't even remember what exactly happens when it appears :)
